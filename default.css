@@ -262,7 +262,7 @@ img.buttonShowValid {
 .focussedElement .stage {
   font-family: sans-serif;
   font-size: 1.2em;
-  margin-left: 2px;
+  margin-right: 2px;
   margin-bottom: 0;
 }
 
@@ -361,7 +361,7 @@ div.pronom a {
 div.stage {
   font-family: sans-serif;
   font-size: 0.8em;
-  margin-left: -8px;
+  margin-right: -6px;
   margin-bottom: -26px;
   margin-top: 10px;
 }
@@ -554,5 +554,11 @@ img.img_header {
 
 h1.legend-table {
     margin-bottom: 5px;
-	font-size: 1.15em;
+    font-size: 1.15em;
+}
+
+p.pronom {/* text-align: end; */}
+
+.stage {
+    text-align: end;
 }
