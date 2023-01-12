@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .header{
-
   top: 0;
   z-index: 2;
   margin-bottom: 35px;
@@ -43,8 +42,6 @@ div h1 {
   padding: 0px;
 }
 
-
-
 .subtitle {
   margin-top: -15px;
   text-align: center;
@@ -66,17 +63,15 @@ div h1 {
   align-items: flex-end;
 }
 
-
 .legend {
   display: block;
   color: #fff;
   border: groove 0.2em;
   border-color: white;
-  background-color: rgb(0 86 166);
+  background-color: rgb(153 187 219);
   width: 230px;
   height: 150px;
   margin-right: 10px;
-  opacity: 0.4;
 }
 
 .legend-wrapper {
@@ -109,6 +104,8 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: solid #002d56;
+  align-items: center;
 }
 
 .filterbox {
@@ -158,6 +155,17 @@ img.button {
 	transition: filter 1000ms;
 }
 
+img.button:hover {
+    width: 35px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid rgb(0 45 86);
+	filter: none;
+	transition: filter 1200ms;
+}
+
 img.buttonShowValid {
     width: 13%;
     height: auto;
@@ -200,10 +208,10 @@ img.buttonShowValid {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
-  max-width: 100%;
   border-radius: 5px;
-  width: 100%;
   font-size: 1em;
+  position: relative;
+  left: 0px;
 }
 
 .infoArrowMimetype p {
@@ -220,10 +228,11 @@ img.buttonShowValid {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
-  max-width: 100%;
+  margin-bottom: 4px;
   border-radius: 5px;
-  width: 100%;
   font-size: 1em;
+  position: relative;
+  left: -7px;
 }
 
 .infoArrowStages p {
@@ -235,10 +244,14 @@ img.buttonShowValid {
 .focussedElement .pronom {
   font-family: sans-serif;
   font-size: 1.2em;
-  margin-left: 2px;
+  margin-left: 4px;
   margin-top: 0;
   margin-bottom: 30px;
   text-decoration: none;
+}
+
+.focussedElement p.pronom {
+	 font-size: 1.2em;
 }
 
 .focussedElement a {
@@ -267,20 +280,22 @@ img.buttonShowValid {
 }
 
 .formattip .tiptext {
-  z-index: 30;
+  z-index: 100;
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
-  width: 100px;
-  background-color: #555;
+  background-color: #99bbdb;
   color: #fff;
-  text-align: center;
-  padding: 8px;
+  text-align: left;
+  padding: 10px;
   border-radius: 3px;
   font-family: sans-serif;
   font-weight: bold;
   margin-left: -15px;
+  border: solid #ff9132;
+  line-height: initial;
+  margin-top: 10px;
 }
 
 .formattip:hover .tiptext {
@@ -292,6 +307,7 @@ img.buttonShowValid {
 
 .periodic-wrapper {
     padding: 15px;
+	padding-right: 0px;
     display: flex;
     max-width: 1600px;
     height: auto;
@@ -303,6 +319,32 @@ img.buttonShowValid {
     margin-top: 0px;
     justify-content: flex-start;
 }
+
+.remarks-wrapper {
+	display: grid;
+    padding: 20px;
+	line-height: 1.4em;
+    max-width: 1600px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    border-top: dashed #002d56;
+}
+
+.remarks-wrapper p {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 3px;
+  font-size: 1.07em;
+  margin-bottom: 2pt;
+}
+
+.list a {
+	font-size: 1.07em;
+}
+
 
 .periodicTable {
 	display: flex;
@@ -398,7 +440,7 @@ p.application {
 }
 
 .word {
-  background-color: rgb(0 66 128);
+  background-color: rgb(0 86 166);
   color: #fff;
 }
 
@@ -408,7 +450,7 @@ p.application {
 }
 
 .presentation {
-  background-color: rgb(0 105 204);
+  background-color: rgb(0 86 166);
   color: #fff;
 }
 
@@ -438,7 +480,7 @@ p.application {
 }
 
 .data {
-  background-color: rgb(41 137 179);
+  background-color: rgb(32 108 140);
   color: #fff;
 }
 
@@ -448,7 +490,7 @@ p.application {
 }
 
 .threed {
-  background-color: rgb(26 88 115);
+  background-color: rgb(32 108 140);
   color: #fff;
 }
 
@@ -456,8 +498,6 @@ p.application {
   background-color: rgb(21 69 89);
   color: #fff;
 }
-
-
 
 .filterbox button {
   border: groove;
@@ -478,7 +518,6 @@ p.application {
   transition: 1000ms;
 }
 
-
 .filterbox button.showValid {
 	display: inline-flex;
 	align-items: center;
@@ -490,8 +529,6 @@ p.application {
   background-color: rgb(49 170 223);
   padding: 8px;
 }
-
-
 
 .footer {
   background-color: white;
@@ -507,7 +544,6 @@ p.application {
   height: 30px;
 }
 
-
 .document-wrapper {
     display: flex;
     flex-direction: row;
@@ -519,13 +555,15 @@ p.application {
     margin-right: auto;
 }
 
-.button-showValid {height: 77%;}
+.button-showValid {
+	height: 77%;
+}
 
 .buttonShowValid {
     height: 77%;
 }
 
-.hiddenNonValid{
+.hiddenNonValid {
 	opacity: 0.2;
 	transition: opacity 1000ms;
 }
@@ -536,8 +574,6 @@ img.img_header {
 
 }
 
-
-
 .title-legend {
     z-index: 70;
     background-color: white;
@@ -546,19 +582,49 @@ img.img_header {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
-    max-width: 85%;
     border-radius: 5px;
-    width: 100%;
     font-size: 1em;
 }
 
 h1.legend-table {
-    margin-bottom: 5px;
-    font-size: 1.15em;
+	 margin-top: 4px;
+	 margin-bottom: 0px;
+	 font-size: 1.15em;
 }
-
-p.pronom {/* text-align: end; */}
 
 .stage {
     text-align: end;
+}
+
+li {
+	float: left;
+	margin-right: 40px;
+	list-style: disc;
+	font-size: 1em;
+}
+
+i.fa.fa-external-link {
+    color: #002d56;
+    font-size: 0.85em;
+}
+
+a.list {
+    color: #002d56;
+}
+
+ul.list {
+    /* font-size: 1.07em; */
+    font-family: sans-serif;
+	margin-top: 5px;
+    margin-left: 10px;
+}
+
+.focussedElement .formattip p.tiptext {
+    margin-left: 3px;
+    line-height: initial;
+    margin-top: 18px;
+}
+
+a:hover {
+    color: #31aadf;
 }
