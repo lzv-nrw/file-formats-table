@@ -532,16 +532,16 @@ p.application {
 
 .footer {
   background-color: white;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   position: absolute;
   width: 100%;
   clear: both;
   text-align: center;
   font-family: sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   box-shadow: 0px 2px 10px 5px #f3f3f3;
-  height: 30px;
+  height: 60px;
 }
 
 .document-wrapper {
@@ -627,4 +627,9 @@ ul.list {
 
 a:hover {
     color: #31aadf;
+}
+
+
+img.license {
+    width: 100px;
 }
