@@ -6,3 +6,5 @@
 Web presentation of an interactive panel of common file formats with information about long term availibility of this formats.
 
 View result at [lzv.nrw](https://www.lzv.nrw/dateiformate/) or [q-terra](https://www.q-terra.de/lzv/)
+
+Licensed under [LGPL v 2.1](LICENSE)
