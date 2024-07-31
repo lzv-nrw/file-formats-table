@@ -4,7 +4,7 @@
 # Interactive panel of common file formats
 
 
-![DAteiformate_Screenshot](https://user-images.githubusercontent.com/107857559/218672665-87747dfa-0652-407c-bf5f-ae14b569d077.jpg)
+![Dateiformate_Screenshot](https://github.com/user-attachments/assets/f8b93d21-cacb-4428-8356-de618463fcb7)
 
 
 Web presentation of an interactive panel of common file formats with information about long term availibility of this formats.
